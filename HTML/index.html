@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-	    <meta charset="utf-8" />
+	    <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../CSS/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/e10814a45c.js" crossorigin="anonymous"></script>
     	<title>Accueil</title>
     </head>
@@ -14,7 +13,7 @@
     <body>
 
         <header>
-            <div class="logo">
+            <div class="logo__noir">
                 <img src="images/logo/ohmyfood.png" alt="logo">
             </div>
         
@@ -22,10 +21,10 @@
         
         <section id="recherche">
             <div class="recherche">
-                <button class="map_marker">
+                <button class="recherche__map_marker">
                     <span><i class="fas fa-map-marker-alt"></i></span>
                 </button>
-                <form class="recherche_ville" method="POST" action="traitemen.php">
+                <form class="recherche__recherche_ville" method="POST" action="traitemen.php">
                     <input type="text" name="ville" placeholder="Paris, Belleville" maxlength="10"/>
                 </form>    
             </div>
@@ -37,7 +36,7 @@
         <section id="reservation">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exeption, séléctionnés par nos soins</p>
-            <button class="explorer">
+            <button class="reservation__explorer">
                 <span><strong>Explorer nos restaurants</strong></span>
             </button>
         </section>
@@ -46,13 +45,13 @@
         <section id="fonctionnement">
             <h2>Fonctionnement</h2>
 
-            <a class="choisir" href="#">
+            <a class="fonctionnement__a__choisir" href="#">
                 <i class="fas fa-mobile-alt"></i> <strong>Choisissez un restaurant</strong>
             </a>
-            <a class="composer" href="#">
+            <a class="fonctionnement__a__composer" href="#">
                 <i class="fas fa-list-ul"></i> <strong>Composez votre menu</strong>
             </a>
-            <a class="deguster" href="#">
+            <a class="fonctionnement__a__deguster" href="#">
                 <i class="fas fa-store"></i> <strong>Dégustez au restaurant</strong>
             </a>
         </section>
@@ -61,11 +60,11 @@
         <section id="restaurant">
             <h2>Restaurants</h2>
 
-            <a class="resto" href="#">
-                <span class="img-resto">
-                    <img src="images/restaurants/palette du goût.jpg" alt="palette"/>
+            <a class="restaurant__carte__" href="palette.html">
+                <span class="restaurant__carte__img-resto">
+                    <img src="images/restaurants/paletteç_du_goût.jpg" alt="palette"/>
                 </span>
-                <span class="description-resto">
+                <span class="restaurant__carte__description-resto">
                     <span class="p"><strong>La palette du goût</strong></span>
                     <span class="p">Ménilmontant</span>
                     <span class="coeur">
@@ -74,9 +73,9 @@
                 </span>
             </a>
 
-            <a class="resto" href="#">
+            <a class="restaurant__carte" href="enchantee.html">
                 <span class="img-resto">
-                    <img src="images/restaurants/note enchantée.jpg" alt="enchantee"/>
+                    <img src="images/restaurants/note_enchantee.jpg" alt="enchantee"/>
                 </span>
                 <span class="description-resto">
                     <span class="p"><strong>La note enchantée</strong></span>
@@ -87,9 +86,9 @@
                 </span>
             </a>
 
-            <a class="resto" href="#">
+            <a class="restaurant__carte" href="francaise.html">
                 <span class="img-resto">
-                    <img src="images/restaurants/à la française.jpg" alt="francaise"/>
+                    <img src="images/restaurants/a_la_française.jpg" alt="francaise"/>
                 </span>
                 <span class="description-resto">
                     <span class="p"><strong>À la française</strong></span>
@@ -100,9 +99,9 @@
                 </span>
             </a>
 
-            <a class="resto" href="#">
+            <a class="restaurant__carte" href="delice.html">
                 <span class="img-resto">
-                    <img src="images/restaurants/delice des sens.jpg" alt="delice"/>
+                    <img src="images/restaurants/delice_des_sens.jpg" alt="delice"/>
                 </span>
                 <span class="description-resto">
                     <span class="p"><strong>Le délice des sens</strong></span>
@@ -116,7 +115,7 @@
 
 
         <footer>
-            <div class="logo-blanc">
+            <div class="logo__blanc">
                 <img src="images/logo/ohmyfood.png" alt="logo-blanc">
             </div>
             <ul>
@@ -127,7 +126,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fal fa-handshake"></i> <strong>Devenir partenaire</strong>
+                        <i class="fas fa-handshake"></i> <strong>Devenir partenaire</strong>
                     </a>
                 </li>
                 <li>
@@ -137,10 +136,6 @@
                     <a href="#">Contact</a>
                 </li>
             </ul>
-            
-            
-        
-
         </footer>
        
     </body>

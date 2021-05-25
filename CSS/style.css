@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 0 20% 0 20%;
+}
+header .logo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#recherche {
+  background-color: #cedcdd;
+  padding: 10px 20% 10px 20%;
+}
+#recherche .recherche {
+  display: flex;
+  flex-wrap: wrap;
+}
+#recherche .recherche .map_marker {
+  border: none;
+}
+#recherche .recherche input {
+  border: none;
+}
+
+#reservation {
+  padding: 50px 20px 50px 20px;
+}
+
+#fonctionnement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 10px 30px 10px;
+}
+#fonctionnement h2 {
+  margin-bottom: 25px;
+}
+#fonctionnement a {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 15px 35px 15px 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: snow;
+  box-shadow: 1px 2px 2px 1px #555;
+}
+#fonctionnement a i {
+  margin-right: 20px;
+}
+
+#restaurant {
+  background-color: #f2f2f2;
+  padding: 30px 10px 30px 10px;
+}
+#restaurant .resto {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 250px;
+  border-radius: 5%;
+  background-color: white;
+}
+#restaurant .resto .img-resto {
+  width: 100%;
+  height: 170px;
+}
+#restaurant .resto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  padding: 15px 0 60px 10px;
+}
+footer ul {
+  width: 100%;
+  list-style: none;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+footer .logo-blanc {
+  border: 2px solid green;
+  width: 100%;
+  margin-bottom: 20px;
+}
+footer .logo-blanc img {
+  width: 35%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
