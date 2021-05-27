@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/e10814a45c.js" crossorigin="anonymous"></script>
-    <title>La note enchantée</title>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resto.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/e10814a45c.js" crossorigin="anonymous"></script>
+        <title>Palette du goût</title>
+    </head>
 <body>
     <header>
         <div class="logo">
@@ -17,64 +17,69 @@
 
     </header>
 
-    <section> 
-        <h1>La note enchantée</h1>
+    <section id="carte">
+        <div class="titre">
+            <h1>La note enchantée</h1>
+            <span class="titre__coeur">
+                <i class="far fa-heart"></i>
+            </span>
+        </div>
 
-        <div id="entree">
+        <div id="menu-entree">
             <h2>ENTRÉE</h2>
 
-            <div class="entree">
+            <div class="menu-entree__entree">
                 <h3>Ravioles de foie gras</h3>
                 <p>Acompagnées de leur crème à la truffe</p> <strong>25€</strong>
             </div>
 
-            <div class="entree">
+            <div class="menu-entree__entree">
                 <h3>caviar osciètre</h3>
                 <p>Sur blini à la farine de blé noir</p> <strong>35€</strong>
             </div>
 
-            <div class="entree">
+            <div class="menu-entree__entree">
                 <h3>Homard et espuma de potiron</h3>
                 <p>Mariné aux zestes d'orange</p> <strong>20€</strong>
             </div>
 
-            <div class="entree">
+            <div class="menu-entree__entree">
                 <h3>Foie gras de canard cuit entier</h3>
                 <p>Confiture de figue et pain toasté</p> <strong>35€</strong>
             </div>
         </div>
 
-        <div id="plat">
+        <div id="menu-plat">
             <h2>PLATS</h2>
 
-            <div class="plat">
+            <div class="menu-plat__plat">
                 <h3>Noix de coquille Saint-Jacques></h3>
                 <p>Sur lit de purée de céleri-rave</p> <strong>40€</strong>
             </div>
-            <div class="plat">
+            <div class="menu-plat__plat">
                 <h3>Langoustine poêlée</h3>
                 <p>Purée de patate douce</p> <strong>35€</strong>
             </div>
-            <div class="plat">
+            <div class="menu-plat__plat">
                 <h3>Mijoté de queu de bœuf</h3>
                 <p>Et riz sauvage aux zestes de citron</p> <strong>44€</strong>
             </div>    
         </div>
 
-        <div id="dessert">
+        <div id="menu-dessert">
             <h2>DESSERTS</h2>
             
-            <div class="dessert">
+            <div class="menu-dessert__dessert">
                 <h3>Macaron noisette et chacolat</h3>
                <p>Glace au caraml brun et sel de Guérande</p> <strong>18€</strong>
             </div>
 
-            <div class="dessert">
+            <div class="menu-dessert__dessert">
                 <h3>Baba au rhum revisité</h3>
                <p>Avec son coulis de citron</p> <strong>22€</strong>
             </div>
 
-            <div class="dessert">
+            <div class="menu-dessert__dessert">
                 <h3>Tarte au citron meringuée</h3>
                <p>Déstructurée</p> <strong>23€</strong>
             </div>
@@ -86,26 +91,28 @@
      
     </section>
 
-    <footer>
-        <div class="logo-blanc">
-            <img src="images/logo/ohmyfood.png" alt="logo-blanc">
-        </div>
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="fas fa-utensils"></i> <strong>Proposer un restaurant</strong>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-handshake"></i> <strong>Devenir partenaire</strong>
-                </a>
-            </li>
-            <li>
-                <a href="#">Mentions légales</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-    </footer>
+        <footer>
+            <div class="logo__blanc">
+                <img src="images/logo/ohmyfood.png" alt="logo-blanc">
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-utensils"></i> <strong>Proposer un restaurant</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-handshake"></i> <strong>Devenir partenaire</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </footer>
+</body>
+</html>

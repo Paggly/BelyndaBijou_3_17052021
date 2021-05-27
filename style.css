@@ -7,30 +7,43 @@
 }
 
 header {
-  padding: 0 20% 0 20%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid red;
 }
-header .logo img {
+header .logo__noir {
+  padding: 9px 30% 0 30%;
+}
+header .logo__noir img {
   width: 100%;
   object-fit: cover;
 }
-
-#recherche {
-  background-color: #cedcdd;
-  padding: 10px 20% 10px 20%;
-}
-#recherche .recherche {
+header .recherche {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  height: 50px;
+  background-color: #cedcdd;
+  padding: 10px 0 10px 30%;
 }
-#recherche .recherche .map_marker {
+header .recherche .map_marker {
   border: none;
 }
-#recherche .recherche input {
+header .recherche input {
   border: none;
+  background-color: #cedcdd;
+  margin-left: 15px;
 }
 
 #reservation {
   padding: 50px 20px 50px 20px;
+  text-align: center;
+}
+#reservation .reservation__explorer {
+  width: 70%;
+  margin-top: 15px;
+  padding: 15px 0 15px 0;
+  border-radius: 200px;
 }
 
 #fonctionnement {
@@ -46,38 +59,67 @@ header .logo img {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 30px;
-  margin-bottom: 10px;
+  height: 70px;
+  margin-bottom: 20px;
   padding: 15px 35px 15px 20px;
   border-radius: 15px;
-  overflow: hidden;
   background-color: snow;
   box-shadow: 1px 2px 2px 1px #555;
+  border: 2px solid black;
 }
 #fonctionnement a i {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+#fonctionnement a .fonctionnement__a__number {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  padding: 5px 9px 5px 10px;
+}
+#fonctionnement a .fonctionnement__a__text {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  text-align: center;
+  align-items: center;
 }
 
 #restaurant {
   background-color: #f2f2f2;
-  padding: 30px 10px 30px 10px;
+  padding: 40px 10px 30px 10px;
+  justify-content: space-between;
+  background-color: grey;
+  justify-content: center;
 }
-#restaurant .resto {
+#restaurant h2 {
+  margin-bottom: 20px;
+}
+#restaurant .retaurant {
+  margin: 0 20px 0 30px;
+}
+#restaurant .restaurant__carte {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
   height: 250px;
   border-radius: 5%;
+  overflow: hidden;
   background-color: white;
+  border: 2px solid yellow;
 }
-#restaurant .resto .img-resto {
+#restaurant .restaurant__carte .restaurant__carte__img-resto {
   width: 100%;
   height: 170px;
+  border: 2px solid green;
 }
-#restaurant .resto img {
+#restaurant .restaurant__carte img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: 2px solid red;
 }
 
 footer {
@@ -85,7 +127,7 @@ footer {
   flex-wrap: wrap;
   background-color: black;
   color: white;
-  padding: 15px 0 60px 10px;
+  padding: 15px 0 60px 25px;
 }
 footer ul {
   width: 100%;
@@ -94,16 +136,24 @@ footer ul {
 footer ul a {
   color: white;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
-footer .logo-blanc {
+footer ul a i {
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+  text-align: right;
+}
+footer .logo__blanc {
   border: 2px solid green;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-size: 20px;
 }
-footer .logo-blanc img {
+footer .logo__blanc img {
   width: 35%;
   object-fit: cover;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

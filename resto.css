@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header .logo__noir {
+  width: 80%;
+  padding: 9px 30% 0 30%;
+}
+header .logo__noir img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#carte {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 20px 5px 30px 5px;
+}
+#carte .titre {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+#carte .titre .titre__coeur {
+  border: 2px solid forestgreen;
+}
+#carte #menu-entree {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border: 2px solid green;
+}
+#carte #menu-entree h2 {
+  color: grey;
+}
+#carte #menu-entree .menu-entree__entree {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 15px;
+  padding-left: 20px 35px 20px 40px;
+  margin-top: 15px;
+  border: 2px solid yellow;
+}
+#carte #menu-entree .menu-entree__entree h3 {
+  width: 100%;
+}
+#carte #menu-plat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border: 2px solid green;
+}
+#carte #menu-plat h2 {
+  color: grey;
+}
+#carte #menu-plat .menu-plat__plat {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 15px;
+  padding-left: 20px 35px 20px 40px;
+  margin-top: 15px;
+  border: 2px solid yellow;
+}
+#carte #menu-plat .menu-plat__plat h3 {
+  width: 100%;
+}
+#carte #menu-dessert {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 2px solid green;
+  margin-bottom: 15px;
+}
+#carte #menu-dessert h2 {
+  color: grey;
+}
+#carte #menu-dessert .menu-dessert__dessert {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 15px;
+  padding-left: 20px 35px 20px 40px;
+  margin-top: 15px;
+  border: 2px solid yellow;
+}
+#carte #menu-dessert .menu-dessert__dessert h3 {
+  width: 100%;
+}
+#carte .commander {
+  width: 60%;
+  margin: 30px auto 20px auto;
+  padding: 15px 0 15px 0;
+  border-radius: 200px;
+  border: 2px solid violet;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  padding: 15px 0 60px 25px;
+}
+footer ul {
+  width: 100%;
+  list-style: none;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+footer ul a i {
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+  text-align: right;
+}
+footer .logo__blanc {
+  border: 2px solid green;
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+footer .logo__blanc img {
+  width: 35%;
+  object-fit: cover;
+  color: white;
+}
+
+/*# sourceMappingURL=resto.css.map */

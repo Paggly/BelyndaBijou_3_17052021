@@ -3,9 +3,9 @@
     <head>
 	    <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/e10814a45c.js" crossorigin="anonymous"></script>
     	<title>Accueil</title>
     </head>
@@ -16,21 +16,16 @@
             <div class="logo__noir">
                 <img src="images/logo/ohmyfood.png" alt="logo">
             </div>
-        
-        </header>
-        
-        <section id="recherche">
             <div class="recherche">
-                <button class="recherche__map_marker">
-                    <span><i class="fas fa-map-marker-alt"></i></span>
-                </button>
+                <span class="recherche__map_marker">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
                 <form class="recherche__recherche_ville" method="POST" action="traitemen.php">
                     <input type="text" name="ville" placeholder="Paris, Belleville" maxlength="10"/>
                 </form>    
             </div>
-        </section>
-
-
+        
+        </header>
 
 
         <section id="reservation">
@@ -45,72 +40,87 @@
         <section id="fonctionnement">
             <h2>Fonctionnement</h2>
 
-            <a class="fonctionnement__a__choisir" href="#">
-                <i class="fas fa-mobile-alt"></i> <strong>Choisissez un restaurant</strong>
+            <a class="fonctionnement__a" href="#">
+                <p class="fonctionnement__a__number">1</p>   
+                 <span class="fonctionnement__a__text">           
+                    <i class="fas fa-mobile-alt"></i>
+                    <p class=>Choisissez un restaurant</p>
+                </span>
             </a>
-            <a class="fonctionnement__a__composer" href="#">
-                <i class="fas fa-list-ul"></i> <strong>Composez votre menu</strong>
+            <a class="fonctionnement__a" href="#">
+                <p class="fonctionnement__a__number">2</p>
+                <span class="fonctionnement__a__text">
+                    <i class="fas fa-list-ul"></i>
+                    <p>Composez votre menu</p>
+                </span>
             </a>
-            <a class="fonctionnement__a__deguster" href="#">
-                <i class="fas fa-store"></i> <strong>Dégustez au restaurant</strong>
+            <a class="fonctionnement__a" href="#">
+                <p class="fonctionnement__a__number">3</p>
+                <span class="fonctionnement__a__text">
+                    <i class="fas fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </span>
             </a>
         </section>
 
 
         <section id="restaurant">
             <h2>Restaurants</h2>
+            
+            <div class="restaurant">
 
-            <a class="restaurant__carte__" href="palette.html">
-                <span class="restaurant__carte__img-resto">
-                    <img src="images/restaurants/paletteç_du_goût.jpg" alt="palette"/>
-                </span>
-                <span class="restaurant__carte__description-resto">
+                <a class="restaurant__carte" href="palette.html">
+                    <span class="restaurant__carte__img-resto">
+                        <img src="images/restaurants/paletteç_du_goût.jpg" alt="palette"/>
+                    </span>
+                    <span class="restaurant__carte__description-resto">
                     <span class="p"><strong>La palette du goût</strong></span>
                     <span class="p">Ménilmontant</span>
                     <span class="coeur">
                         <i class="far fa-heart"></i>
                     </span>
-                </span>
-            </a>
+                    </span>
+                </a>
 
-            <a class="restaurant__carte" href="enchantee.html">
-                <span class="img-resto">
+                <a class="restaurant__carte" href="enchantee.html">
+                <span class="restaurant__carte__img-resto">
                     <img src="images/restaurants/note_enchantee.jpg" alt="enchantee"/>
                 </span>
-                <span class="description-resto">
+                <span class="restaurant__carte__description-resto">
                     <span class="p"><strong>La note enchantée</strong></span>
                     <span class="p">Charonne</span>
                     <span class="coeur">
                         <i class="far fa-heart"></i>
                     </span>
                 </span>
-            </a>
+                </a>
 
-            <a class="restaurant__carte" href="francaise.html">
-                <span class="img-resto">
+                <a class="restaurant__carte" href="francaise.html">
+                <span class="restaurant__carte__img-resto">
                     <img src="images/restaurants/a_la_française.jpg" alt="francaise"/>
                 </span>
-                <span class="description-resto">
+                <span class="restaurant__carte__description-resto">
                     <span class="p"><strong>À la française</strong></span>
                     <span class="p">Cité Rouge</span>
                     <span class="coeur">
                         <i class="far fa-heart"></i>
                     </span>
                 </span>
-            </a>
+                </a>
 
-            <a class="restaurant__carte" href="delice.html">
-                <span class="img-resto">
+                <a class="restaurant__carte" href="delice.html">
+                <span class="restaurant__carte__img-resto">
                     <img src="images/restaurants/delice_des_sens.jpg" alt="delice"/>
                 </span>
-                <span class="description-resto">
+                <span class="restaurant__carte__description-resto">
                     <span class="p"><strong>Le délice des sens</strong></span>
                     <span class="p">Folie-Méricourt</span>
                     <span class="coeur">
                         <i class="far fa-heart"></i>
                     </span>
                 </span>
-            </a>
+                </a>
+            </div>
         </section>
 
 
