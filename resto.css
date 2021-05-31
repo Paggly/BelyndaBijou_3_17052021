@@ -6,19 +6,24 @@
   box-sizing: border-box;
 }
 
-header .logo__noir {
-  width: 80%;
+header {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #9356DC;
+  text-align: center;
+}
+header .en-tete__logo--noir {
   padding: 9px 30% 0 30%;
 }
-header .logo__noir img {
+header .en-tete__logo--noir img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 #carte {
   display: flex;
   flex-wrap: wrap;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding: 20px 5px 30px 5px;

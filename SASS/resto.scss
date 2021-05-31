@@ -1,20 +1,22 @@
+@import 'kiosque/mixins.scss';
+@import 'kiosque/variables.scss';
+
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+    @include reset;
 }
 
 header {
-    
-    .logo__noir {
-        width: 80%;
-        padding: 9px 30% 0 30%;   
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid $primaire;
+    text-align: center;
+
+    .en-tete__logo--noir {
+        padding: 9px 30% 0 30%;      
     
         img {
         width: 100%;
-        object-fit: contain;
+        object-fit: cover;
         }
         
     }
@@ -24,7 +26,7 @@ header {
 #carte {
     display: flex;
     flex-wrap: wrap;
-    background-color: #f2f2f2;
+    background-color: $bgcgris;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding: 20px 5px 30px 5px;

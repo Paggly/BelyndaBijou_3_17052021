@@ -1,4 +1,17 @@
 @mixin box-shadow {
     box-shadow: 1px 2px 2px 1px #555;
-    
+
+}
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@mixin disflex {
+    display: flex;
+    flex-wrap: wrap; 
 }
