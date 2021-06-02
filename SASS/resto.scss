@@ -6,131 +6,136 @@
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
+    @include disflex;
     border: 2px solid $primaire;
-    text-align: center;
+    position: relative;
+
 
     .en-tete__logo--noir {
-        padding: 9px 30% 0 30%;      
-    
+       width: 50%;
+       margin: 5px 25% 5px 25%;
+       border: 2px solid red;
+
         img {
-        width: 100%;
-        object-fit: cover;
+            width: 100%;
+            object-fit: cover;
         }
         
+    }
+    .retour {
+        position: absolute;
+        padding-top: 15px
+
     }
 
 }
 
 #carte {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: $bgcgris;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    @include disflex;
     padding: 20px 5px 30px 5px;
 
-    .titre {
-        display: flex;
-        flex-wrap: wrap;
-        border: 2px solid black;
-        margin-bottom: 20px;
-
-        .titre__coeur {
-            border: 2px solid forestgreen
-        }
-    }
-
-    #menu-entree {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 15px;
-        border: 2px solid green;
-
-        h2 {
-            color: grey;
+    .img-background {
+        width: 100%;
+        height: 20%;
+        border: 2px solid pink;
+        
+        img {
+            width: 100%;                
+            object-fit: cover;
         }
 
-        .menu-entree__entree {
-            display: flex;
-            flex-wrap: wrap;
+    }    
+
+    .carte__resto {
+
+        @include disflex;
+        background-color: $bgcgris;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-top:250px;
+
+        border: 2px solid orange;
+
+
+
+
+        .titre {
+            @include disflex;
+            width: 100%;
+            border: 2px solid black;
+            margin-bottom: 20px;
+            padding: 8px;
+            justify-content: space-between;
+            font-family: 'shrikhand', sherif;
+            
+            
+            .titre__coeur {
+                font-size: 25px;
+                border: 2px solid forestgreen
+            }
+        }
+    
+        #menu-entree {
+            @include disflex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            border: 2px solid green;
+    
+            h2 {
+                color: grey;
+            }
+
+           
+        
+        }
+    
+        #menu-plat {
+            @include disflex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            border: 2px solid green;
+    
+            h2 {
+                color: grey;
+            }
+        }
+        
+        #menu-dessert {
+            @include disflex;
+            justify-content: space-between;
+            border: 2px solid green;
+            margin-bottom: 15px;
+    
+            h2 {
+                color: grey;
+            }
+        }
+    
+        .commander {
+            width: 60%;
+            margin: 30px auto 20px auto;
+            padding: 15px 0 15px 0;
+            border-radius: 200px;
+            background: linear-gradient( 180deg, $secondaire 0%, $primaire 100%);
+            color: white;
+            border: 2px solid violet;
+        }
+    
+        .menu {
+            @include disflex;
             width: 100%;
             border-radius: 15px;
             padding: 20px 35px 20px 40px;
             margin-top: 15px;
             border: 2px solid yellow;
-
+    
             h3 {
-                width: 100%;
-             
+                width: 100%; 
             }
             
         }
     }
 
-    #menu-plat {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 15px;
-        border: 2px solid green;
-
-        h2 {
-            color: grey;
-        }
-
-        .menu-plat__plat {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            border-radius: 15px;
-            padding: 20px 35px 20px 40px;
-            margin-top: 15px;
-            border: 2px solid yellow;
-
-            h3 {
-                width: 100%;
-             
-            }
-        }
-    }
-    
-    #menu-dessert {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        border: 2px solid green;
-        margin-bottom: 15px;
-
-        h2 {
-            color: grey;
-        }
-
-        .menu-dessert__dessert {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            border-radius: 15px;
-            padding: 20px 35px 20px 40px;
-            margin-top: 15px;
-            border: 2px solid yellow;
-
-            h3 {
-                width: 100%;
-             
-            }
-        }
-    }
-
-    .commander {
-        width: 60%;
-        margin: 30px auto 20px auto;
-        padding: 15px 0 15px 0;
-        border-radius: 200px;
-        border: 2px solid violet;
-    }
 
 }
 

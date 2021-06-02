@@ -10,105 +10,111 @@ header {
   display: flex;
   flex-wrap: wrap;
   border: 2px solid #9356DC;
-  text-align: center;
+  position: relative;
 }
 header .en-tete__logo--noir {
-  padding: 9px 30% 0 30%;
+  width: 50%;
+  margin: 5px 25% 5px 25%;
+  border: 2px solid red;
 }
 header .en-tete__logo--noir img {
   width: 100%;
   object-fit: cover;
 }
+header .retour {
+  position: absolute;
+  padding-top: 15px;
+}
 
 #carte {
   display: flex;
   flex-wrap: wrap;
-  background-color: #f6f6f6;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
   padding: 20px 5px 30px 5px;
+  position: relative;
 }
-#carte .titre {
+#carte .img-background {
+  width: 100%;
+  height: 20%;
+  border: 2px solid pink;
+}
+#carte .img-background img {
+  width: 100%;
+  object-fit: cover;
+}
+#carte .carte__resto {
   display: flex;
   flex-wrap: wrap;
+  background-color: #f6f6f6;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: absolute;
+  margin-top: 250px;
+  border: 2px solid orange;
+}
+#carte .carte__resto .titre {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   border: 2px solid black;
   margin-bottom: 20px;
+  padding: 8px;
+  justify-content: space-between;
+  font-family: "shrikhand", sherif;
 }
-#carte .titre .titre__coeur {
+#carte .carte__resto .titre .titre__coeur {
+  font-size: 25px;
   border: 2px solid forestgreen;
 }
-#carte #menu-entree {
+#carte .carte__resto #menu-entree {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 15px;
   border: 2px solid green;
 }
-#carte #menu-entree h2 {
+#carte .carte__resto #menu-entree h2 {
   color: grey;
 }
-#carte #menu-entree .menu-entree__entree {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  border-radius: 15px;
-  padding: 20px 35px 20px 40px;
-  margin-top: 15px;
-  border: 2px solid yellow;
-}
-#carte #menu-entree .menu-entree__entree h3 {
-  width: 100%;
-}
-#carte #menu-plat {
+#carte .carte__resto #menu-plat {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 15px;
   border: 2px solid green;
 }
-#carte #menu-plat h2 {
+#carte .carte__resto #menu-plat h2 {
   color: grey;
 }
-#carte #menu-plat .menu-plat__plat {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  border-radius: 15px;
-  padding: 20px 35px 20px 40px;
-  margin-top: 15px;
-  border: 2px solid yellow;
-}
-#carte #menu-plat .menu-plat__plat h3 {
-  width: 100%;
-}
-#carte #menu-dessert {
+#carte .carte__resto #menu-dessert {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   border: 2px solid green;
   margin-bottom: 15px;
 }
-#carte #menu-dessert h2 {
+#carte .carte__resto #menu-dessert h2 {
   color: grey;
 }
-#carte #menu-dessert .menu-dessert__dessert {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  border-radius: 15px;
-  padding: 20px 35px 20px 40px;
-  margin-top: 15px;
-  border: 2px solid yellow;
-}
-#carte #menu-dessert .menu-dessert__dessert h3 {
-  width: 100%;
-}
-#carte .commander {
+#carte .carte__resto .commander {
   width: 60%;
   margin: 30px auto 20px auto;
   padding: 15px 0 15px 0;
   border-radius: 200px;
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  color: white;
   border: 2px solid violet;
+}
+#carte .carte__resto .menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px 35px 20px 40px;
+  margin-top: 15px;
+  border: 2px solid yellow;
+}
+#carte .carte__resto .menu h3 {
+  width: 100%;
 }
 
 footer {
