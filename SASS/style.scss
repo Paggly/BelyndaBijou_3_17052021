@@ -5,6 +5,10 @@
     @include reset;
 }
 
+body {
+    @include font-face
+}
+
 header {
     @include disflex;
     text-align: center;

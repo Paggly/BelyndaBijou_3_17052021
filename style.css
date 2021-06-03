@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "roboto", sans-serif;
+}
+
 header {
   display: flex;
   flex-wrap: wrap;
