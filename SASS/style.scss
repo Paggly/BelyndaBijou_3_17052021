@@ -8,11 +8,13 @@
 header {
     @include disflex;
     text-align: center;
+    justify-content: center;
+    border: 2px solid green;
+
 
     .en-tete__logo--noir {
-        padding: 9px 30% 0 30%;
-        box-shadow: 0px 0px 6px 0px #555;    
-    
+        padding: 10px 30% 5px 30%;
+                   
         img {
         width: 100%;
         object-fit: cover;
@@ -25,8 +27,9 @@ header {
         width: 100%;
         height: 50px;
         background-color: $bgcmediumgris;
-        color: #7a7a7a;
+        color: gray;
         padding: 10px 0 10px 30%;
+    
 
         .map_marker {
             border: none;       
@@ -126,34 +129,41 @@ header {
         margin: 10px auto;
         text-decoration: none;
         color: black;
-        border: 2px solid yellow;
 
         .restaurant__carte__img-resto {
             width: 100%;
             height: 170px;
-        }
+            position: relative;
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border: 2px solid red;
-        }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
 
+            span {
+                position: absolute;
+                top: 15px;
+                right: 10px;
+                color: #1b6150;
+                background-color: $tertiaire;
+                padding: 10px 20px;
+            }
+        }
+        
         .restaurant__carte__description-resto {
             @include disflex;
             width: 100%;
-            border: 2px solid violet;
 
             .p {
                 @include disflex;
                 width: 60%;
-                border: 2px solid black;
+                padding-left: 15px;
             }
+
             .coeur {
                 width: 40%;
                 position: relative;
-                border: 2px solid green;
 
                 i{
                     font-size: 30px;

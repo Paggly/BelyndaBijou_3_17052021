@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    color:black;
     list-style: none;
     box-sizing: border-box;
 }
@@ -14,5 +15,14 @@
 @mixin disflex {
     display: flex;
     flex-wrap: wrap; 
+}
+
+@mixin font-face {
+    font-family: 'roboto', sans-serif;    
+}
+
+@mixin font-title {
+    font-family: 'Shrikhand', serif;
+    
 }
 
