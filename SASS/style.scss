@@ -189,10 +189,24 @@ footer {
     background-color: black;
     color: white;
     padding: 15px 0 60px 25px;
+
+
+    .pied-de-page__logo--blanc {
+        @include font-title;
+        font-size: 30px;
+        color: white;
+        width: 100%;
+        padding-right: 50%;
+            
+        border:2px solid green;
+    }
+    
     
     ul {
         width: 100%;
         list-style: none;
+        
+        border: 2px solid red;
 
         
         a {
@@ -209,18 +223,8 @@ footer {
         }
     }
 
-    .pied-de-page__logo--blanc {
-        border: 2px solid green;
-        width: 100%;
-        margin-bottom: 25px;
-        font-size: 20px;
+    
 
-        img {
-            width: 35%;
-            object-fit: cover;
-            color: white;
-        }
-    }
 }
 
 
