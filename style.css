@@ -131,7 +131,7 @@ header .recherche input {
   height: 100%;
   object-fit: cover;
 }
-#restaurant .restaurant__carte .restaurant__carte__img-resto span {
+#restaurant .restaurant__carte .restaurant__carte__img-resto .nouveau {
   position: absolute;
   top: 15px;
   right: 10px;
@@ -144,11 +144,17 @@ header .recherche input {
   flex-wrap: wrap;
   width: 100%;
 }
-#restaurant .restaurant__carte .restaurant__carte__description-resto .p {
+#restaurant .restaurant__carte .restaurant__carte__description-resto .info {
   display: flex;
   flex-wrap: wrap;
   width: 60%;
   padding-left: 15px;
+}
+#restaurant .restaurant__carte .restaurant__carte__description-resto .info .p {
+  width: 100%;
+}
+#restaurant .restaurant__carte .restaurant__carte__description-resto .info .lieu {
+  width: 100%;
 }
 #restaurant .restaurant__carte .restaurant__carte__description-resto .coeur {
   width: 40%;
@@ -158,13 +164,22 @@ header .recherche input {
   font-size: 30px;
   position: absolute;
   margin-left: 50%;
-  margin-top: 10%;
+}
+#restaurant .restaurant__carte .restaurant__carte__description-resto .coeur .plein {
+  opacity: 0;
+}
+#restaurant .restaurant__carte .restaurant__carte__description-resto .coeur:hover .vide {
+  opacity: 0;
+}
+#restaurant .restaurant__carte .restaurant__carte__description-resto .coeur:hover .plein i {
+  opacity: 1;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
 }
 
 footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: #313131;
   color: white;
   padding: 15px 0 60px 25px;
 }

@@ -75,8 +75,7 @@ header {
     }
 
     a {
-        display: flex;
-        flex-wrap: wrap;
+        @include disflex;
         width: 100%;
         height: 70px;
         margin: 20px;
@@ -102,8 +101,7 @@ header {
         }
 
         .fonctionnement__a__text {
-            display: flex;
-            flex-wrap: wrap;
+            @include disflex;
             padding-left: 50px;
             text-align: center;
             align-items: center;
@@ -145,7 +143,7 @@ header {
                 object-fit: cover;
             }
 
-            span {
+            .nouveau {
                 position: absolute;
                 top: 15px;
                 right: 10px;
@@ -159,10 +157,17 @@ header {
             @include disflex;
             width: 100%;
 
-            .p {
+            .info {
                 @include disflex;
                 width: 60%;
                 padding-left: 15px;
+                
+                .p {
+                    width: 100%;
+               }
+               .lieu {
+                   width: 100%;
+               }
             }
 
             .coeur {
@@ -173,8 +178,20 @@ header {
                     font-size: 30px;
                     position:absolute;
                     margin-left: 50%;
-                    margin-top: 10%;
                     
+                }
+                .plein {
+                    opacity:0;
+                }
+
+                &:hover {
+                    .vide {
+                        opacity: 0;
+                    }
+                    .plein i {
+                        opacity: 1;
+                        @include degradecoeur;
+                    }
                 }
         
             }
@@ -186,7 +203,7 @@ header {
 
 footer {
     @include disflex;
-    background-color: black;
+    background-color: rgb(49, 49, 49);
     color: white;
     padding: 15px 0 60px 25px;
 

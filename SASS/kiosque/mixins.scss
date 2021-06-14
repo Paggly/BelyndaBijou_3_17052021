@@ -25,3 +25,19 @@
     
 }
 
+@mixin degradebtn {
+    background: linear-gradient( 180deg, $secondaire 0%, $primaire 100%);
+}
+
+@mixin degradecoeur {
+    background: linear-gradient( 180deg, $primaire 0%, $secondaire 100%);
+}
+
+
+@mixin gradient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    
+
+
