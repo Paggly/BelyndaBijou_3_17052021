@@ -72,17 +72,22 @@ header .retour {
 }
 #carte .carte__resto .titre .titre__coeur {
   width: 20%;
-  font-size: 25px;
+  font-size: 30px;
   padding-left: 30px;
 }
 #carte .carte__resto .titre .titre__coeur:hover .vide {
   opacity: 0;
 }
-#carte .carte__resto .titre .titre__coeur:hover .plein i {
+#carte .carte__resto .titre .titre__coeur:hover .plein {
   opacity: 1;
+  background-color: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  animation-iteration-count: 1;
+  animation-fill-mode: 1;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
 }
 #carte .carte__resto .titre .titre__coeur .vide {
   position: absolute;
@@ -91,6 +96,8 @@ header .retour {
 #carte .carte__resto .titre .titre__coeur .plein {
   position: absolute;
   padding: 0 10px 5px 10px;
+  background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
 }
 #carte .carte__resto #menu-entree {
@@ -134,15 +141,41 @@ header .retour {
   justify-content: space-between;
   border: 2px solid yellow;
 }
+#carte .carte__resto .menu:hover {
+  margin: none;
+  padding: none;
+}
 #carte .carte__resto .menu:hover .description {
-  width: 60%;
+  width: 40%;
+  transition-duration: 1s;
 }
 #carte .carte__resto .menu:hover .prix {
-  width: 20%;
+  width: 80px;
+  transform: translateX(-30%) transition-duration 1s;
 }
 #carte .carte__resto .menu:hover .check {
-  width: 20%;
+  width: 0%;
   opacity: 1;
+  transform: translateX(-50%);
+  animation-name: taille;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: 1;
+  transform: rotate(-360deg);
+  transform-origin: center center;
+  transition-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes taille {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80px;
+    height: 80px;
+  }
 }
 #carte .carte__resto .menu .description {
   width: 80%;
@@ -153,29 +186,38 @@ header .retour {
   width: 100%;
   height: 50%;
   font-size: 17px;
+  text-overflow: ellipsis;
+  overflow: hidden;
   border: solid 2px gray;
 }
 #carte .carte__resto .menu .description p {
   width: 100%;
   height: 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
   border: 2px solid red;
 }
 #carte .carte__resto .menu .prix {
   width: 20%;
   height: 100%;
+  text-align: center;
   align-items: center;
+  padding-top: 20px;
   border: 2px solid green;
 }
 #carte .carte__resto .menu .check {
   background: #99E2D0;
   color: white;
   width: 20%;
+  height: 100%;
   opacity: 0;
   border: 2px solid black;
 }
 #carte .carte__resto .menu .check i {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 #carte .carte__resto .commander {
   width: 60%;

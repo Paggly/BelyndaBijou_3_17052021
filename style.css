@@ -163,7 +163,7 @@ header .recherche input {
 #restaurant .restaurant__carte .restaurant__carte__description-resto .coeur i {
   font-size: 30px;
   position: absolute;
-  margin-left: 50%;
+  margin-left: 75%;
 }
 #restaurant .restaurant__carte .restaurant__carte__description-resto .coeur .plein {
   opacity: 0;
@@ -173,7 +173,7 @@ header .recherche input {
 }
 #restaurant .restaurant__carte .restaurant__carte__description-resto .coeur:hover .plein i {
   opacity: 1;
-  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background-color: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
 }
 
 footer {
