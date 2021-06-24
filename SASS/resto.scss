@@ -36,6 +36,7 @@ header {
 
 #carte {
     @include disflex;
+
     padding: 0px 5px 0px 5px;
 
     .img-background {
@@ -78,7 +79,17 @@ header {
                 width: 20%;
                 font-size: 30px;
                 padding-left: 30px;
+
+                i{
+                    font-size: 30px;
+                    position: absolute;
+                    padding: 0 10px 10px 10px;
+                }
                 
+                .plein {
+                    opacity: 0;
+                }
+
                 &:hover {
                     
                     .vide {
@@ -86,30 +97,17 @@ header {
                     }
                     .plein {
                         opacity: 1;
-                        @include degradecoeur;
                         animation-iteration-count: 1;
                         animation-fill-mode: 1;
                         background-clip: text;
                         -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        -webkit-animation-fill-mode: forwards;
-                        -webkit-animation-iteration-count:1;
-                        
+
+
+                        i{
+                            @include degradecoeur;
+                        }                        
                     }
                 }
-                .vide {
-                    position: absolute;
-                    padding: 0 10px 5px 10px;
-                }
-                .plein {
-                    position: absolute;
-                    padding:  0 10px 5px 10px;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    opacity: 0;
-                
-
-                }  
             }
        
         }
@@ -163,29 +161,41 @@ header {
                 padding: none;
                 
                 .description {
-                    width: 40%;
+                    width: 55%;
                     transition-duration: 1s;
                 }
             
                 .prix {
-                    width: 80px;
-                    transform: translateX(-30%)
+                    width: 60px;
+                    transform: translateX(-80px)
                     transition-duration 1s;                   
                 }
                 .check {
                     width: 0%;
+                    height: 79px;
                     opacity: 1;
-                    transform:translateX(-50%);
+                    font-size: 50px;
+                    padding: 15px;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
                     animation-name: taille;
                     animation-duration: 1s;
                     animation-iteration-count: 1;
                     animation-fill-mode: 1;
-                    transform: rotate(-360deg);
-                    transform-origin: center center;
                     transition-duration: 1s;
                     -webkit-animation-duration:1s;
                     -webkit-animation-iteration-count:1;
                     -webkit-animation-fill-mode: forwards;
+
+                    i{
+                        transform: rotate(-360deg);
+                        transform-origin: center center;
+                        -webkit-transform: rotate(-360deg);
+                        
+
+
+                    }
+
                 }
 
                 @keyframes taille {
@@ -194,8 +204,7 @@ header {
                     }
                   
                     to {
-                        width: 80px;
-                        height: 80px;
+                        width: 85px;
                     }
                 }
 
@@ -203,25 +212,27 @@ header {
             }
 
             .description {
+                white-space: nowrap;
                 width: 80%;
                 height: 100%;
                 border: 2px solid blue;
+                
                 
                 h3 {
                     width: 100%;
                     height: 50%;
                     font-size: 17px;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
                     border: solid 2px gray;
+                    overflow: hidden;
+                    text-overflow: ellipsis;    
                 }
                 
                 p {
                     width: 100%;
                     height: 50%;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
                     border: 2px solid red;
+                    overflow: hidden;
+                    text-overflow: ellipsis;    
                 }
             }
 
@@ -229,8 +240,7 @@ header {
                 width: 20%;
                 height: 100%;
                 text-align: center;
-                align-items: center;
-                padding-top: 20px;
+                padding-top: 50px;
 
                 border: 2px solid green;
             }
@@ -238,20 +248,11 @@ header {
             .check {
                 background: $tertiaire;
                 color: white;
-                width: 20%;
+                width: 0px;
                 height: 100%;
+                padding-bottom: 10px;
                 opacity: 0;        
-                border: 2px solid black;
-
-                i{
-                    width: 100%;
-                    height: 100%;
-                    justify-content: center;
-                    align-items: center;
-                    
-                }                
-
-                
+                border: 2px solid black;                
             }                       
         }
     
