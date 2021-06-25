@@ -13,8 +13,6 @@ header {
     @include disflex;
     text-align: center;
     justify-content: center;
-    border: 2px solid green;
-
 
     .en-tete__logo--noir {
         padding: 10px 30% 5px 30%;
@@ -37,16 +35,14 @@ header {
 
         .map_marker {
             border: none;
-            margin-right: 5px;     
+         
         }
-     
+ 
         input {
             border: none;
             background-color: $bgcmediumgris;
-            margin-left: 15px;
         }
-
-        
+       
     }
 }
 
@@ -63,7 +59,11 @@ header {
         border-radius: 200px;
         color: white;
         border: none;
-        background: linear-gradient( 180deg, $secondaire 0%, $primaire 100%)
+        @include degradebtn;
+        &:hover {
+            @include box-shadow-hover;
+            opacity: 0.8;
+        }
     }   
 }
 
@@ -84,7 +84,7 @@ header {
         margin: 20px;
         border-radius: 15px;
         background-color: $bgcgris;
-        box-shadow: 1px 2px 2px 1px $bgcmediumgris;
+        @include box-shadow;
         position: relative;
             
         i {
@@ -108,6 +108,11 @@ header {
             text-align: center;
             align-items: center;
             color: black;
+        }
+
+        &:hover {
+            background-color: rgb(206, 193, 204);
+            @include box-shadow-hover;
         }
     }
 }
@@ -133,6 +138,9 @@ header {
         margin: 10px auto;
         text-decoration: none;
         color: black;
+        &:hover {
+            @include box-shadow-hover;
+        }
 
         .restaurant__carte__img-resto {
             width: 100%;
@@ -182,22 +190,19 @@ header {
                     margin-left: 75%;
                     
                 }
-                .plein {
-                    opacity:0;
-                }
-
+                
                 &:hover {
-                    .vide {
-                        opacity: 0;
+                
+                     i {
+                        @include degradecoeur;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                        font-weight: 900;
+                        -webkit-transition-duration: 0.5s;
+                        transition-duration: 0.5s;                      
                     }
-                    .plein {
-                        opacity: 1;
                         
-                        i {
-                            @include degradecoeur;
-                        }
-                        
-                    }
                 }
         
             }
@@ -213,7 +218,6 @@ footer {
     color: white;
     padding: 15px 0 60px 25px;
 
-
     .pied-de-page__logo--blanc {
         @include font-title;
         font-size: 20px;
@@ -222,7 +226,6 @@ footer {
         padding-right: 50%;
         padding-bottom: 15px;
             
-        border:2px solid green;
     }
     
     
@@ -230,8 +233,6 @@ footer {
         width: 100%;
         list-style: none;
         font-size: initial;
-        
-        border: 2px solid red;
 
         li{
             margin-bottom: 10px;
