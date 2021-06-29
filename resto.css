@@ -61,6 +61,7 @@ header .retour i {
   display: flex;
   flex-wrap: wrap;
   font-family: "Shrikhand", serif;
+  position: relative;
   width: 100%;
   margin-bottom: 20px;
   justify-content: space-between;
@@ -73,6 +74,7 @@ header .retour i {
   width: 10%;
   font-size: 30px;
   margin-right: 5px;
+  margin-top: 10px;
 }
 #carte .carte__resto .titre .titre__coeur i {
   font-size: 30px;
@@ -133,13 +135,14 @@ header .retour i {
   background-color: white;
   border-bottom: 9px;
   margin: 3px 0 3px 0;
+  justify-content: space-between;
 }
 #carte .carte__resto .menu:hover .description {
   width: 60%;
   transition-duration: 1s;
 }
 #carte .carte__resto .menu:hover .slide {
-  width: 40%;
+  width: 110px;
   justify-content: space-between;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -157,17 +160,19 @@ header .retour i {
   width: 60px;
   height: 100%;
   opacity: 1;
-  font-size: 50px;
-  padding: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   animation-name: taille;
-  transition-duration: 1s;
-  -webkit-transition-duration: 1s;
+  transition-duration: 1.2s;
+  -webkit-transition-duration: 1.2s;
 }
 #carte .carte__resto .menu:hover .slide .check .cercle {
-  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   background-clip: text;
   color: white;
   background-color: #99E2D0;
@@ -179,8 +184,7 @@ header .retour i {
   -webkit-animation-duration: 1s;
 }
 #carte .carte__resto .menu:hover .slide .check .cercle i {
-  font-size: 40px;
-  margin-bottom: 10%;
+  font-size: 33px;
 }
 #carte .carte__resto .menu .description {
   white-space: nowrap;
@@ -206,7 +210,6 @@ header .retour i {
   flex-wrap: wrap;
   width: 30px;
   height: 100%;
-  border: 2px solid yellow;
   margin-right: none;
 }
 #carte .carte__resto .menu .slide .prix {
@@ -220,20 +223,14 @@ header .retour i {
   width: 0px;
   height: 100%;
   opacity: 0;
-  border: 2px solid black;
 }
 #carte .carte__resto .menu .slide .check .cercle {
-  width: 0%;
-  height: 100%;
-  border: 2px solid red;
-}
-#carte .carte__resto .menu .slide .check .cercle i {
   width: 0%;
   height: 100%;
 }
 #carte .carte__resto .commander {
   width: 60%;
-  margin: 30px auto 20px auto;
+  margin: 30px 20% 20px 20%;
   padding: 15px 0 15px 0;
   border-radius: 200px;
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
@@ -250,41 +247,42 @@ footer {
   flex-wrap: wrap;
   background-color: #313131;
   color: white;
-  padding: 15px 0 60px 10px;
+  padding: 15px 0 20px 25px;
 }
 footer .pied-de-page__logo--blanc {
-  font-family: "Shrikhand", serif;
-  font-size: 30px;
-  color: white;
-  width: 100%;
   padding-right: 50%;
+  padding-bottom: 15px;
 }
 footer ul {
   width: 100%;
   list-style: none;
+  font-size: initial;
+}
+footer ul li {
+  margin-bottom: 10px;
 }
 footer ul a {
   color: white;
   text-decoration: none;
-  margin-bottom: 15px;
 }
 footer ul a i {
   width: 10px;
   height: 10px;
-  margin-right: 15px;
+  margin-right: 10px;
   text-align: right;
 }
 
+/* annimation & keyframes */
 .fondu1 {
   animation: fondu 1.3s;
 }
 
 .fondu2 {
-  animation: fondu 2s;
+  animation: fondu 2.6s;
 }
 
 .fondu3 {
-  animation: fondu 3s;
+  animation: fondu 3.9s;
 }
 
 @keyframes fondu {
@@ -313,8 +311,16 @@ footer ul a i {
 }
 /* MediaQueries */
 @media screen and (min-width: 800px) {
-  .carte__resto {
-    justify-content: center;
+  #carte {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #carte .carte__resto {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 15%;
+    margin-right: 15%;
+    margin-left: 15%;
   }
 }
 
