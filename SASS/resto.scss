@@ -62,10 +62,9 @@ header {
         .titre {
             @include disflex;
             @include font-title;
-            position: relative;
             width: 100%;
             margin-bottom: 20px;
-            justify-content: space-between 10px;
+            justify-content: space-between;
 
             h1 {
                 width: 80%;
@@ -73,14 +72,12 @@ header {
             }
             
             .titre__coeur {
-                width: 10%;
-                font-size: 30px;
-                margin-right: 5px;
-                margin-top: 10px;
-            
+                width: 15%;
+                margin-top: 5px;
+                justify-content: right;
+                                
                 i{
                     font-size: 30px;
-                    position: absolute;
                 }
                 
                 &:hover {
