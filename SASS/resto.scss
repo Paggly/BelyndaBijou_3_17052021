@@ -87,8 +87,8 @@ header {
                     i{
                         @include degradecoeur;
                         background-clip: text;
-                        -webkit-text-fill-color: transparent;
                         -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                         font-weight: 900;
                         transition-duration: 0.5s;             
                     }                                            
