@@ -85,7 +85,7 @@ header {
     background-color: $bgcgris;
 
     .reservation__explorer {
-        width: 70%;
+        width: 200px;
         margin-top: 15px;
         padding: 15px 0 15px 0;
         border-radius: 200px;
@@ -170,7 +170,7 @@ header {
         text-decoration: none;
         color: black;
         &:hover {
-            @include box-shadow-hover;
+            @include box-shadow-hover
         }
 
         .restaurant__carte__img-resto {
@@ -226,9 +226,8 @@ header {
                 
                      i {
                         @include degradecoeur;
-                        background-clip: text;
                         -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
+                        color: transparent;
                         font-weight: 900;
                         transition-duration: 0.5s;                      
                     }                        
@@ -301,23 +300,26 @@ footer {
 
 /* MediaQueries */
 
-@media screen and (min-width: 800px) and (max-width: 1090px) {
+@media screen and (min-width: 800px) and (max-width: 1119px) {
 
     #reservation {
         h1 {
             margin: 0 37%;
         }
         .reservation__explorer {
-            width: 60%;
-            height: 60px;
+            width: 250px;
             margin-top: 15px;
             padding: 15px 0 15px 0;
             border-radius: 200px;
-            font-size: 17px;
             color: white;
             border: none;
-            background: linear-gradient( 180deg, $secondaire 0%, $primaire 100%)
-        }   
+            @include degradebtn;
+            border: 2px solid violet;
+            
+            &:hover {
+                @include box-shadow-hover;
+            }
+        }
     }
 
     #fonctionnement {
@@ -353,6 +355,7 @@ footer {
     #restaurant {
         @include disflex;
         width: 100%;
+        justify-content: center;
             
         h2 {
             margin-bottom: 20px;
@@ -361,13 +364,18 @@ footer {
     
         .restaurant {
             @include disflex;
-            width: 100%;
-            padding: 20px 15%;
-            justify-content: space-around;
-                                
+            width: 900px;
+            margin: 15px 10%;
+            padding-left: 40px;
+            padding-right: 30px;
+            justify-content: center;
+        
+            
             .restaurant__carte {
                 width: 250px;
                 height: 250px;
+                margin: 10px;
+            
                 
                 .coeur {
                     width: 40%;
@@ -376,111 +384,36 @@ footer {
                     i{
                         font-size: 30px;
                         position:absolute;
-                        margin-left: 65%;
-                        
+                        margin-left: 65%;                        
                     }
                 }
             }
-
         }
     }
    
 }
 
 
-@media screen and (min-width: 1020px) and (max-width: 1519px) {
+@media screen and (min-width: 1120px) {
 
     #reservation {
         h1 {
-            margin: 0 37%;
+            margin: 0 40%;
         }
         .reservation__explorer {
-            width: 60%;
-            height: 60px;
+            width: 300px;
             margin-top: 15px;
             padding: 15px 0 15px 0;
             border-radius: 200px;
-            font-size: 17px;
             color: white;
             border: none;
-            background: linear-gradient( 180deg, $secondaire 0%, $primaire 100%)
-        }   
-    }
-
-    #fonctionnement {
-        @include disflex;
-        justify-content: space-between;
-        padding: 30px 10px 30px 10px;
-    
-        h2 {
-            width: 100%;
-            margin-bottom: 25px;
-        }
-    
-        a {
-            @include disflex;
-            width: 30%;
-            height: 63px;
-            margin: 10px;
-            border-radius: 15px;
-            background-color: $bgcgris;
-            box-shadow: 1px 2px 2px 1px $bgcmediumgris;
-            position: relative;
-    
-            .fonctionnement__a__text {
-                @include disflex;
-                padding-left: 20px;
-                text-align: center;
-                align-items: center;
-                color: black;
+            @include degradebtn;
+            border: 2px solid violet;
+            
+            &:hover {
+                @include box-shadow-hover;
             }
         }
-    }
-   
-    #restaurant {
-        .restaurant {
-            @include disflex;
-            width: 100%;
-            padding: 0 25% 0 25%;
-            justify-content: space-around;
-
-            .restaurant__carte{
-                width: 250px;
-                height: 250px;
-
-                .coeur {
-                    width: 40%;
-                    position: relative;
-    
-                    i{
-                        font-size: 30px;
-                        position:absolute;
-                        margin-left: 65%;
-                        
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1520px) {
-
-    #reservation {
-        h1 {
-            margin: 0 37%;
-        }
-        .reservation__explorer {
-            width: 60%;
-            height: 60px;
-            margin-top: 15px;
-            padding: 15px 0 15px 0;
-            border-radius: 200px;
-            font-size: 17px;
-            color: white;
-            border: none;
-            background: linear-gradient( 180deg, $secondaire 0%, $primaire 100%)
-        } 
     }
 
     #fonctionnement {
@@ -539,6 +472,7 @@ footer {
         }
     }
 }
+
 
 
 

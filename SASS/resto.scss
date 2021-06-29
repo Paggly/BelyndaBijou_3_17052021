@@ -86,9 +86,8 @@ header {
                 &:hover {
                     i{
                         @include degradecoeur;
-                        background-clip: text;
                         -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
+                        color: transparent;
                         font-weight: 900;
                         transition-duration: 0.5s;             
                     }                                            

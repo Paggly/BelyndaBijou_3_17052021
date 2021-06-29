@@ -80,9 +80,8 @@ header .retour i {
 }
 #carte .carte__resto .titre .titre__coeur:hover i {
   background-image: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
-  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   font-weight: 900;
   transition-duration: 0.5s;
 }
