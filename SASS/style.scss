@@ -23,20 +23,20 @@ body {
     justify-content: center;
     align-items: center;
     animation: opacite;
-    animation-duration: 4s;
+    animation-duration: 2.5s;
     animation-fill-mode: forwards;
     
 
     .loader {
 
-        border: 30px solid $tertiaire;
-        border-top: 30px solid $primaire;
-        border-bottom: 30px solid $secondaire;
+        border: 25px solid $tertiaire;
+        border-top: 25px solid $primaire;
+        border-bottom: 25px solid $secondaire;
         border-radius: 50%;
         width: 250px;
         height: 250px;
         animation: spin;
-        animation-duration: 4s;
+        animation-duration: 2.5s;
 
     }
     
@@ -61,20 +61,20 @@ header {
         @include disflex;
         width: 100%;
         height: 50px;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         background-color: $bgcmediumgris;
         color: gray;
         padding: 10px 25% 10px 25%;
     
-
         .map_marker {
-            border: none;
-         
+            border: none;          
         }
  
         input {
             border: none;
             background-color: $bgcmediumgris;
+            margin-left: 7px;
         }       
     }
 }
@@ -92,10 +92,10 @@ header {
         color: white;
         border: none;
         @include degradebtn;
+        border: 2px solid violet;
         
         &:hover {
             @include box-shadow-hover;
-            opacity: 0.8;
         }
     }   
 }
@@ -216,7 +216,7 @@ header {
                 position: relative;
 
                 i{
-                    font-size: 30px;
+                    font-size: 27px;
                     position:absolute;
                     margin-left: 75%;
                     
@@ -247,15 +247,14 @@ footer {
     padding: 15px 0 20px 25px;
 
     .pied-de-page__logo--blanc {
-        padding-right: 50%;
-        padding-bottom: 15px;
-            
+        padding-bottom: 15px;       
     }
         
     ul {
         width: 100%;
         list-style: none;
-        font-size: initial;
+        font-size: 15px;
+        padding-bottom: 10px;
 
         li{
             margin-bottom: 10px;
@@ -288,7 +287,7 @@ footer {
 }
 @keyframes opacite {
     from{
-        opacity: 2;
+        opacity: 1;
         z-index:  50
     }
     to{

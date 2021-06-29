@@ -36,6 +36,7 @@
 
 @mixin box-shadow-hover {
     box-shadow: 1px 6px 6px 1px rgb(56, 54, 54);
+    opacity: 0.8;
 }
 
 

@@ -12,22 +12,19 @@ body {
 header {
     @include disflex;
     position: relative;
+    justify-content: center;
+    align-items: center;
 
     .en-tete__logo--noir {
         width: 300px;
         height: 60px;
-        margin: 15px 30% 10px 25%;
-    
-        img {
-            width: 100%;
-            object-fit: cover;
-        }
-        
+        margin: 15px 25% 10px 25%;
+            
     }
     .retour {
         position: absolute;
         left: 30px;
-        top: 35%;
+        bottom: 55%;
 
         i{
             font-size: 22px;
@@ -68,7 +65,7 @@ header {
             position: relative;
             width: 100%;
             margin-bottom: 20px;
-            justify-content: space-between;
+            justify-content: space-between 10px;
 
             h1 {
                 width: 80%;
@@ -93,7 +90,6 @@ header {
                         -webkit-text-fill-color: transparent;
                         -webkit-background-clip: text;
                         font-weight: 900;
-                        -webkit-transition-duration: 0.5s;
                         transition-duration: 0.5s;             
                     }                                            
                 }
@@ -164,9 +160,6 @@ header {
                     animation-iteration-count: 1;
                     animation-fill-mode: 1;
                     transition-duration: 1s;
-                    -webkit-animation-duration:1s;
-                    -webkit-animation-iteration-count:1;
-                    -webkit-animation-fill-mode: forwards;
                     margin-right: none;
 
 
@@ -181,7 +174,6 @@ header {
                         border-bottom-right-radius: 15px;
                         animation-name: taille;
                         transition-duration: 1.2s;
-                        -webkit-transition-duration: 1.2s;
                             
                         .cercle {
                             @include disflex;
@@ -192,12 +184,10 @@ header {
                             background-clip: text;
                             color: white;
                             background-color: $tertiaire;
-                            -webkit-background-clip: text;
                             transition-duration: 1s;
-                            -webkit-transition-duration: 1s;
                             animation-name: rotate;
                             animation-duration: 1s;
-                            -webkit-animation-duration: 1s;
+
                             i{
                                 font-size: 33px;
 
@@ -266,7 +256,6 @@ header {
             border: 2px solid violet;
             &:hover {
                 @include box-shadow-hover;
-                opacity: 0.8;
             }
         }        
     }
@@ -279,16 +268,14 @@ footer {
     padding: 15px 0 20px 25px;
 
     .pied-de-page__logo--blanc {
-        padding-right: 50%;
-        padding-bottom: 15px;
-            
+        padding-bottom: 15px;       
     }
-    
-    
+        
     ul {
         width: 100%;
         list-style: none;
-        font-size: initial;
+        font-size: 15px;
+        padding-bottom: 10px;
 
         li{
             margin-bottom: 10px;
@@ -306,9 +293,6 @@ footer {
             }
         }
     }
-
-    
-
 }
 
 /* annimation & keyframes */
