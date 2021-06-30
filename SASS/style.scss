@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     animation: opacite;
-    animation-duration: 2.5s;
+    animation-duration: 3.5s;
     animation-fill-mode: forwards;
     
 
@@ -36,8 +36,7 @@ body {
         width: 250px;
         height: 250px;
         animation: spin;
-        animation-duration: 2.5s;
-
+        animation-duration: 3.5s;
     }
     
 }
@@ -218,8 +217,7 @@ header {
                 i{
                     font-size: 27px;
                     position:absolute;
-                    margin-left: 75%;
-                    
+                    margin-left: 75%;                    
                 }
                 
                 &:hover {
@@ -285,7 +283,7 @@ footer {
 }
 @keyframes opacite {
     from{
-        opacity: 1;
+        opacity: 2;
         z-index:  50
     }
     to{
