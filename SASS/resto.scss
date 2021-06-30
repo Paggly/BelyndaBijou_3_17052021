@@ -37,7 +37,6 @@ header {
 #carte {
     @include disflex;
 
-
     .img-background {
         width: 100%;
         height: 200px;
@@ -56,7 +55,7 @@ header {
         background-color: $bgcmediumgris;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        padding: 0px 10px 0px 10px;
+        padding: 0px 15px 0px 15px;
         opacity: 1.5;        
 
         .titre {
@@ -146,20 +145,16 @@ header {
             &:hover {
                 .description {
                     width: 60%;
-                    transition-duration: 1s;
+                    transition-duration: 0.5s;
                 }
 
                 .slide {
-                    width: 110px;
+                    width: 100px;
                     border-top-right-radius: 15px;
                     border-bottom-right-radius: 15px;
-                    justify-content: space-between;
-                    animation-duration: 1s;
-                    animation-iteration-count: 1;
-                    animation-fill-mode: 1;
-                    transition-duration: 1s;
                     margin-right: none;
-
+                    justify-content: space-between;
+                    transition-duration: 1s;
 
                     .prix {
                         width: 30px;                   
@@ -170,8 +165,9 @@ header {
                         opacity: 1;
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;
-                        animation-name: taille;
-                        transition-duration: 1.2s;
+                        animation-name: check;
+                        transition-duration: 1.5s;
+                        
                             
                         .cercle {
                             @include disflex;
@@ -182,12 +178,11 @@ header {
                             background-clip: text;
                             color: white;
                             transition-duration: 1s;
-                            animation-name: rotate;
-                            animation-duration: 1s;
+                            
 
                             i{
                                 animation-name: cercle;
-                                animation-duration: 1s;
+                                animation-duration: 1.5s;
                                 animation-fill-mode: forwards;
                             }                  
                         }
@@ -222,7 +217,6 @@ header {
                 @include disflex;
                 width: 30px;
                 height: 100%;
-                margin-right: none;
 
                 .prix {
                     width: 40px;
@@ -235,10 +229,14 @@ header {
                     background: $tertiaire;
                     width: 0px;
                     height: 100%;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
                     opacity: 0;
                     .cercle {      
                         width: 0%;
-                        height: 100%;                                                                  
+                        height: 100%;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;                                                                  
                     }                          
                 }     
             }                              
@@ -293,7 +291,9 @@ footer {
     }
 }
 
+
 /* annimation & keyframes */
+
 .fondu1 {
     animation: fondu 1.3s;
 }
@@ -311,6 +311,15 @@ footer {
         opacity: 1;
     }
 }
+@keyframes slide {
+    from {
+        width: 30px;
+    }
+    to {
+        width: 110px;
+    }
+    
+}
 @keyframes rotate {
     from{
         transform: rotate(90deg);
@@ -319,7 +328,7 @@ footer {
         transform:rotate(-360deg);
     }
 }
-@keyframes taille {
+@keyframes check {
     from {
         width: 0px;
     }
