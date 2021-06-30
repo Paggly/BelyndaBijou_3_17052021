@@ -150,8 +150,6 @@ header {
 
                 .slide {
                     width: 100px;
-                    border-top-right-radius: 15px;
-                    border-bottom-right-radius: 15px;
                     margin-right: none;
                     justify-content: space-between;
                     transition-duration: 1s;
@@ -163,10 +161,8 @@ header {
                         width: 60px;
                         height: 100%;
                         opacity: 1;
-                        border-top-right-radius: 15px;
-                        border-bottom-right-radius: 15px;
                         animation-name: check;
-                        transition-duration: 1.5s;
+                        animation-duration: 1.5s;
                         
                             
                         .cercle {
@@ -215,13 +211,14 @@ header {
 
             .slide {
                 @include disflex;
-                width: 30px;
+                width: 40px;
                 height: 100%;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
 
                 .prix {
-                    width: 40px;
+                    width: 30px;
                     height: 100%;
-                    text-align: center;
                     padding-top: 50px;
                 }
     
@@ -235,8 +232,7 @@ header {
                     .cercle {      
                         width: 0%;
                         height: 100%;
-                        border-top-right-radius: 15px;
-                        border-bottom-right-radius: 15px;                                                                  
+                        border-radius: 15px;                                                                  
                     }                          
                 }     
             }                              
