@@ -136,6 +136,8 @@ header .retour i {
 }
 #carte .carte__resto .menu:hover .slide {
   width: 110px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   justify-content: space-between;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -164,13 +166,14 @@ header .retour i {
   align-items: center;
   background-clip: text;
   color: white;
-  background-color: #99E2D0;
   transition-duration: 1s;
   animation-name: rotate;
   animation-duration: 1s;
 }
 #carte .carte__resto .menu:hover .slide .check .cercle i {
-  font-size: 33px;
+  animation-name: cercle;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 #carte .carte__resto .menu .description {
   white-space: nowrap;
@@ -293,6 +296,14 @@ footer ul a i {
   }
   to {
     width: 60px;
+  }
+}
+@keyframes cercle {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 33px;
   }
 }
 /* MediaQueries */
