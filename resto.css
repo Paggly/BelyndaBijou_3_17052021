@@ -49,6 +49,7 @@ header .retour i {
 #carte .carte__resto {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   background-color: #e4e4e4;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -93,6 +94,7 @@ header .retour i {
   color: grey;
   border-bottom: 4px solid #99E2D0;
   width: 50px;
+  margin-bottom: 5px;
 }
 #carte .carte__resto #menu-plat {
   display: flex;
@@ -118,6 +120,7 @@ header .retour i {
   color: grey;
   border-bottom: 4px solid #99E2D0;
   width: 50px;
+  margin-bottom: 5px;
 }
 #carte .carte__resto .menu {
   display: flex;
@@ -148,7 +151,7 @@ header .retour i {
   height: 100%;
   opacity: 1;
   animation-name: check;
-  animation-duration: 1.5s;
+  animation-duration: 1.2s;
 }
 #carte .carte__resto .menu:hover .slide .check .cercle {
   display: flex;
@@ -157,14 +160,18 @@ header .retour i {
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-clip: text;
-  color: white;
-  transition-duration: 1s;
+  transition-duration: 1.5s;
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 0.3s;
 }
 #carte .carte__resto .menu:hover .slide .check .cercle i {
+  font-size: 33px;
+  transition-duration: 1.5s;
   animation-name: cercle;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
+  animation-delay: 0.3;
 }
 #carte .carte__resto .menu .description {
   white-space: nowrap;
@@ -209,6 +216,8 @@ header .retour i {
 #carte .carte__resto .menu .slide .check .cercle {
   width: 0%;
   height: 100%;
+  -webkit-background-clip: text;
+  color: white;
   border-radius: 15px;
 }
 #carte .carte__resto .commander {
@@ -226,6 +235,7 @@ header .retour i {
 }
 
 footer {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   background-color: #313131;
@@ -286,7 +296,7 @@ footer ul a i {
 }
 @keyframes rotate {
   from {
-    transform: rotate(90deg);
+    transform: rotate(-180deg);
   }
   to {
     transform: rotate(-360deg);
@@ -303,9 +313,11 @@ footer ul a i {
 @keyframes cercle {
   from {
     font-size: 0;
+    opacity: 0;
   }
   to {
-    font-size: 33px;
+    font-size: 30px;
+    opacity: 1;
   }
 }
 /* MediaQueries */

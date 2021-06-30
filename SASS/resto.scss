@@ -52,6 +52,7 @@ header {
 
     .carte__resto {
         @include disflex;
+        width: 100%;
         background-color: $bgcmediumgris;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -102,6 +103,7 @@ header {
                 color: grey;
                 border-bottom: 4px solid $tertiaire;
                 width: 50px;
+                margin-bottom: 5px;
             }
         }
     
@@ -129,6 +131,7 @@ header {
                 color: grey;
                 border-bottom: 4px solid $tertiaire;
                 width: 50px;
+                margin-bottom: 5px;
             }
         }
 
@@ -162,7 +165,7 @@ header {
                         height: 100%;
                         opacity: 1;
                         animation-name: check;
-                        animation-duration: 1.5s;
+                        animation-duration: 1.2s;
                         
                             
                         .cercle {
@@ -170,16 +173,21 @@ header {
                             width: 100%;
                             height: 100%;
                             justify-content: center;
-                            align-items: center;
-                            background-clip: text;
-                            color: white;
-                            transition-duration: 1s;
-                            
+                            align-items: center;                            
+                            transition-duration: 1.5s;
+                            animation-name: rotate;
+                            animation-duration: 1.5s;
+                            animation-delay: 0.3s;
 
+                            
                             i{
+                                font-size: 33px;
+                                transition-duration: 1.5s;
                                 animation-name: cercle;
-                                animation-duration: 1.5s;
+                                animation-duration: 1s;
                                 animation-fill-mode: forwards;
+                                animation-delay: 0.3;
+                    
                             }                  
                         }
                     }                
@@ -232,6 +240,8 @@ header {
                     .cercle {      
                         width: 0%;
                         height: 100%;
+                        -webkit-background-clip: text;
+                        color: white;
                         border-radius: 15px;                                                                  
                     }                          
                 }     
@@ -254,6 +264,7 @@ header {
 }
 
 footer {
+    width: 100%;
     @include disflex;
     background-color: rgb(49, 49, 49);
     color: white;
@@ -318,7 +329,7 @@ footer {
 }
 @keyframes rotate {
     from{
-        transform: rotate(90deg);
+        transform: rotate(-180deg);
     }
     to{
         transform:rotate(-360deg);
@@ -335,9 +346,11 @@ footer {
 @keyframes cercle {
     from {
         font-size: 0;
+        opacity: 0;
     }
     to {
-        font-size: 33px;
+        font-size: 30px;
+        opacity: 1;
     }
 }
 

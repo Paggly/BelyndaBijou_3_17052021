@@ -37,7 +37,7 @@ body {
   width: 250px;
   height: 250px;
   animation: spin;
-  animation-duration: 3.5s;
+  animation-duration: 3s;
 }
 
 header {
@@ -202,11 +202,11 @@ header .recherche input {
   width: 100%;
 }
 #restaurant .restaurant__carte .restaurant__carte__description-resto .coeur {
-  width: 40%;
+  width: 35%;
   position: relative;
 }
 #restaurant .restaurant__carte .restaurant__carte__description-resto .coeur i {
-  font-size: 27px;
+  font-size: 30px;
   position: absolute;
   margin-left: 75%;
 }

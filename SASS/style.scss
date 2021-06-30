@@ -37,7 +37,7 @@ body {
         width: 250px;
         height: 250px;
         animation: spin;
-        animation-duration: 3.5s;
+        animation-duration: 3s;
     }
     
 }
@@ -212,11 +212,11 @@ header {
             }
 
             .coeur {
-                width: 40%;
+                width: 35%;
                 position: relative;
 
                 i{
-                    font-size: 27px;
+                    font-size: 30px;
                     position:absolute;
                     margin-left: 75%;                    
                 }
