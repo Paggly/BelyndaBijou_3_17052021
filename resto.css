@@ -54,7 +54,7 @@ header .retour i {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   padding: 0px 15px 0px 15px;
-  opacity: 1.5;
+  opacity: 1;
 }
 #carte .carte__resto .titre {
   display: flex;
@@ -142,7 +142,6 @@ header .retour i {
 }
 #carte .carte__resto .menu:hover .slide {
   width: 100px;
-  margin-right: none;
   justify-content: space-between;
   transition-duration: 1s;
 }
@@ -174,7 +173,7 @@ header .retour i {
   animation-name: cercle;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: 0.3;
+  animation-delay: 0.3s;
 }
 #carte .carte__resto .menu .description {
   white-space: nowrap;

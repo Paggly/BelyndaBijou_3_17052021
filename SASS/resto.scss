@@ -57,7 +57,7 @@ header {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         padding: 0px 15px 0px 15px;
-        opacity: 1.5;        
+        opacity: 1;        
 
         .titre {
             @include disflex;
@@ -156,7 +156,6 @@ header {
 
                 .slide {
                     width: 100px;
-                    margin-right: none;
                     justify-content: space-between;
                     transition-duration: 1s;
 
@@ -188,7 +187,7 @@ header {
                                 animation-name: cercle;
                                 animation-duration: 1s;
                                 animation-fill-mode: forwards;
-                                animation-delay: 0.3;
+                                animation-delay: 0.3s;
                     
                             }                  
                         }
