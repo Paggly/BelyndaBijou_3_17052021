@@ -75,9 +75,12 @@ header {
                 width: 15%;
                 margin-top: 5px;
                 justify-content: right;
+                position: relative;
                                 
                 i{
                     font-size: 30px;
+                    position:absolute;
+                    right: 5px;
                 }
                 
                 &:hover {
@@ -178,7 +181,6 @@ header {
                             animation-name: rotate;
                             animation-duration: 1.5s;
                             animation-delay: 0.3s;
-
                             
                             i{
                                 font-size: 33px;

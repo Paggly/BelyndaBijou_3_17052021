@@ -72,9 +72,12 @@ header .retour i {
   width: 15%;
   margin-top: 5px;
   justify-content: right;
+  position: relative;
 }
 #carte .carte__resto .titre .titre__coeur i {
   font-size: 30px;
+  position: absolute;
+  right: 5px;
 }
 #carte .carte__resto .titre .titre__coeur:hover i {
   background-image: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
